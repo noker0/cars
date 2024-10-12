@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legend Car - Yamaha MT09</title>
+</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/css/engine.css">
+    <link rel="stylesheet" href="./assets/css/btn.css">
+<body>
+
+    <!--  navbar -->
+    <nav class="nav-container">
+        <div class="Logo">
+            <img src="./assets/img/logo.png" alt="" class="logo">
+            <p class="logo-text">Car's spare part</p>
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="">REVIEW</a></li>
+            <li><a href="register.html" class="end">REGISTER</a></li>
+            <div class="user">
+                <div class="user-circle"><i class="fa fa-user"></i></div>
+                <p>Guest</p>
+            </div>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+        </ul>
+        <div class="select" style="position: absolute;left: 1250px;bottom: -87px;">
+            <div class="selected" data-default="EN" data-one="RU" data-two="UZ">
+                <img src="assets/img/EN.png" alt="Flag" class="flag-icon" id="selected-flag">
+                <span id="selected-text">EN</span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="arrow">
+                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path>
+                </svg>
+            </div>
+            <div class="options">
+                <a href="index.html" style="color: white;text-decoration: none;">
+                <div title="EN">
+                    <input id="all" name="option" type="radio" checked />
+                    <img src="assets/img/EN.png" class="flag-icon" alt="USA Flag">
+                    <label class="option" for="all" data-txt="EN"></label>
+                </div>
+                </a>
+                <a href="index_ru.html" style="color: white;text-decoration: none;">
+                    <div title="RU" >
+                        <input id="option-1" name="option" type="radio" />
+                        <img src="/assets/img/RU.png" class="flag-icon" alt="Russia Flag">
+                        <label class="option" for="option-1" data-txt="RU"></label>
+                    </div>
+                </a>
+                <div title="UZ">
+                    <input id="option-2" name="option" type="radio" />
+                    <img src="/assets/img/UZ.png" class="flag-icon" alt="Uzbekistan Flag">
+                    <label class="option" for="option-2" data-txt="UZ"></label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- secrtion -->
+    <div class="circles"
+        style="background-color: rgb(235, 190, 96);border-radius: 50%;width: 299px;height: 295px; position: relative;left: -150px;top: 150px;">
+    </div>
+
+    <div class="">
+        <div class="" style="display: flex;justify-content: center;">
+            <p style="color: rgb(235, 190, 96);left: 210px;top: 150px;max-width: 150px;font-size: 50px;"><a href="shop.html" style="text-decoration: none; color: rgb(235, 190, 96);">Catalogs</a></p>
+        </div>
+        <div class="" style="display: flex;justify-content: center;">
+            <div class=""
+                style="background-color: rgb(40, 37, 36);width: 210px;height: 10px;margin-left: 20px;margin-top: 10px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="" style="display: flex;justify-content: center;">
+        <div class="search-bar"
+            style="background-color: rgb(235, 190, 96);width: 1100px;height: 66px;margin-top: 100px;border-radius: 50px;display: flex;align-items: center;"
+            class="">
+            <img src="./assets/img/Без_названия__4_-removebg-preview.png" style="display: none;width: 80px;height: 50px;"
+                class="none-block" alt="">
+            <div class="block-none"
+                style="display: flex;align-items: center;justify-content: center;gap: 40px;margin-left: 9%;">
+                <a style="color: rgb(40, 37, 36);font-size: 23px;text-decoration: none;" href="engines.html">Engines</a>
+                <a style="color: rgb(40, 37, 36);font-size: 23px;text-decoration: none;" href="">Exteriors</a>
+                <a style="color: rgb(40, 37, 36);font-size: 23px;text-decoration: none;" href="">Electric</a>
+                <a style="color: rgb(40, 37, 36);font-size: 23px;text-decoration: none;" href="">Brake</a>
+                <a style="color: rgb(40, 37, 36);font-size: 23px;text-decoration: none;" href="">Suspension</a>
+            </div>
+
+            <input
+                style="background: rgb(40, 37, 36); width: 325px;height: 42px;border-radius: 50px;margin-left: 5%;color: rgb(235, 190, 96);border: none;"
+                placeholder="Enter to Search" class="search" />
+            <button class="btn-2"
+                style="width: 113px;height: 40px;background: rgb(235, 190, 96);border: none;position: absolute;left: 1180px;border-radius: 50px;border: 2px solid rgb(40, 37, 36);color: rgb(40, 37, 36);font-size: 15px;display: flex;align-items: center;padding-left: 15px;gap: 10px;cursor: pointer; ">Search
+                <img src="./assets/img/Search_alt.png" alt="" style="z-index: 3;"></button>
+
+        </div>
+    </div>
+
+    <div style="display: flex;justify-content: flex-end;position: absolute;width: 100%;">
+        <div class="circles" style="width: 100px;
+        position: relative;
+        top: 0px;
+        height: 200px;
+        background-color: rgb(40, 37, 36);
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0; "></div>
+    </div>
+
+    <div class="" style="display: flex;justify-content: center;">
+
+        <div class="r"
+            style="background-color: rgb(40, 37, 36);width: 1100px;height: 1700x;margin-top: 50px;display: flex;margin-bottom: 50px;">
+            <div class="y" style="margin: 50px; width: 57%;">
+                <p style="font-size: 45px;color: rgb(235, 190, 96);margin-bottom: 30px;">Legend Car - Yamaha MT09</p>
+                <p class="t" style="color: white;font-size: 30px;">Yamaha has been the official engine supplier for the
+                    Legend Car since 1993. The current model engine for the Legend Car is the MT09, and is in fact a
+                    3-cylinder motorcycle engine. Following modifications by the U.S. Legend Cars Engine Shop, all
+                    engines are sealed and have 135 horsepower before installation in a new build or individually sold.
+                    A Legend Car utilizes a spooled rear gear and a six-speed transmission.</p>
+                <div class="" style="margin-top: 100px;margin-bottom: 20px;">
+                    <div class="l" style="display: flex;width: 75%;" class="">
+                        <p style="font-size: 24px;color: gray; width: 250px;">Top Speed</p>
+                        <p style="font-size: 24px;color: rgb(235, 190, 96);">123 mph/198 kpk</p>
+                    </div>
+                    <div class="" style="height: 3px;width: 100%;background: rgb(235, 190, 96);margin-top: 15px;"></div>
+                </div>
+                <div class="" style="margin-bottom: 20px;">
+                    <div class="l" style="display: flex;width: 75%;" class="">
+                        <p style="font-size: 24px;color: gray; width: 250px;">Displacement</p>
+                        <p style="font-size: 24px;color: rgb(235, 190, 96);">900 cc</p>
+                    </div>
+                    <div class="" style="height: 3px;width: 100%;background: rgb(235, 190, 96);margin-top: 15px;"></div>
+                </div>
+                <div class="" style="margin-bottom: 20px;">
+                    <div class="l" style="display: flex;width: 75%;" class="">
+                        <p style="font-size: 24px;color: gray; width: 250px;">Torque</p>
+                        <p style="font-size: 24px;color: rgb(235, 190, 96);">72 Foot Pounds</p>
+                    </div>
+                    <div class="" style="height: 3px;width: 100%;background: rgb(235, 190, 96);margin-top: 15px;"></div>
+                </div>
+                <div class="" style="margin-bottom: 20px;">
+                    <div class="l" style="display: flex;width: 75%;" class="">
+                        <p style="font-size: 24px;color: gray; width: 250px;">Compression Ratio</p>
+                        <p style="font-size: 24px;color: rgb(235, 190, 96);">11.4 to 1</p>
+                    </div>
+                    <div class="" style="height: 3px;width: 100%;background: rgb(235, 190, 96);margin-top: 15px;"></div>
+                </div>
+                <div class="" style="margin-bottom: 20px;">
+                    <div class="l" style="display: flex;width: 75%;" class="">
+                        <p style="font-size: 24px;color: gray; width: 250px;">Fuel</p>
+                        <p style="font-size: 24px;color: rgb(235, 190, 96);">Non-Ethanol 93</p>
+                    </div>
+                    <div class="" style="height: 3px;width: 100%;background: rgb(235, 190, 96);margin-top: 15px;"></div>
+                </div>
+                <div class="" style="margin-bottom: 20px;">
+                    <div class="l" style="display: flex;width: 75%;" class="">
+                        <p style="font-size: 24px;color: gray; width: 250px;">Fuel Capacity</p>
+                        <p style="font-size: 24px;color: rgb(235, 190, 96);">4.1 Gallons</p>
+                    </div>
+                    <div class="" style="height: 3px;width: 100%;background: rgb(235, 190, 96);margin-top: 15px;"></div>
+                </div>
+                <div class="" style="margin-bottom: 20px;">
+                    <div class="l" style="display: flex;width: 100%;" class="">
+                        <p style="font-size: 24px;color: gray; width: 250px;">Fuel Delivery</p>
+                        <p style="font-size: 24px;color: rgb(235, 190, 96);margin-left: 10px;">Fuel Injection with a 50
+                            PSI Pump</p>
+                    </div>
+                    <div class="" style="height: 3px;width: 100%;background: rgb(235, 190, 96);margin-top: 15px;"></div>
+                </div>
+                <p
+                    style="font-size: 28px;font-weight: bold;color: rgb(235, 190, 96);margin-top: 50px;margin-bottom: 20px;">
+                    Pricing</p>
+                <p style="font-size: 28px;"><span style="color: gray;">MT09 New:</span><span
+                        style="color: rgb(235, 190, 96);margin-left: 5px;">$5,700</span></p>
+                <p style="font-size: 28px;"><span style="color: gray;">MT09 New with 1250 conversion kit:</span><span
+                        style="color: rgb(235, 190, 96);margin-left: 5px;">$8,400</span></p>
+                <p style="font-size: 28px;"><span style="color: gray;">MT09 Rebuild:</span><span
+                        style="color: rgb(235, 190, 96);margin-left: 5px;">$2,800-3,300</span></p>
+                <p style="font-size: 28px;"><span style="color: gray;">MT09 Top End:</span><span
+                        style="color: rgb(235, 190, 96);margin-left: 5px;">$1,800-2,300</span></p>
+                <p style="font-size: 28px;"><span style="color: gray;">MT09 Dyno:</span><span
+                        style="color: rgb(235, 190, 96);margin-left: 5px;">$300</span></p>
+                <p style="color: rgb(235, 190, 96);font-size: 28px;">*For MT09 Complete Converstion Kit. Additional
+                    options available at purchase.</p>
+            </div>
+            <div class="u">
+                <img class="kko" src="./assets/img/image 52.png" style="width: 350px;height: 250px;margin-top: 300px;"
+                    alt="">
+                <div class="" style="display: flex;justify-content: end;">
+                    <img src="./assets/img/Polygon 1.png" class="circles"
+                        style="width: 400px;height: 400px;margin-top: 647px;" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="p"
+        style="color: rgb(235, 190, 96);font-size: 36px;margin-left: 13.5%;font-weight: bold;margin-bottom: 20px;">Other
+        products</p>
+        <div class="container our-services">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front" style="background: rgb(40, 37, 36)">
+                                <div>
+                                    <h6
+                                        style="font-size: 16px;color: rgb(40, 37, 36);background: rgb(235, 190, 96);width: 68px;height: 28px;display: flex;align-items: center;justify-content: center;border-radius: 35px ;position: relative; right: 30px; bottom: 5px;">
+                                        Sale</h6>
+                                    <img class="lazyload" src="./assets/img/image 53.png" alt="Avatar"
+                                        style="width:190px;height:150px;">
+                                    <h3>ALCO 539T</h3>
+                                    <img src="./assets/img/Polygon 1.png"
+                                        style="width: 70px;height: 70px;position: relative; left: 105px; top: 30px;"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="back" style="background: rgb(40, 37, 36)">
+                                <h4>ALCO 539T</h4>
+                                <p style="margin-top: 30px; color: rgb(235, 190, 96);">Informations:</p>
+                                <p>Top Speed - 123 mph/198 kpk</p>
+                                <p>Displacement - 900 cc</p>
+                                <p>Torque - 72 Foot Pounds</p>
+                                <div style="display: flex; align-items: center; margin-top: 30px;">
+                                    <p style="color: rgb(235, 190, 96);">Cost:
+                                    <h6
+                                        style="color: silver; text-decoration: line-through; margin: 0px 5px;">
+                                        $3800 </h6>
+                                    <h6
+                                        style="color: white; font-size: 14px;">
+                                        $2700</h6>
+                                    </p>
+                                </div>
+                                <button class="Btn"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front" style="background: rgb(40, 37, 36)">
+                                <div>
+                                    <img class="lazyload" src="./assets/img/image 54.png" alt="Avatar"
+                                        style="width:190px;height:150px;">
+                                    <h3>Caterpillar C27</h3>
+                                    <img src="./assets/img/Polygon 1.png"
+                                        style="width: 70px;height: 70px;position: relative; left: 105px; top: 43px;"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="back" style="background: rgb(40, 37, 36)">
+                                <h4>Caterpillar C27</h4>
+                                <p style="margin-top: 30px; color: rgb(235, 190, 96);">Informations</p>
+                                <p>Top Speed - 102 mph/164 kpk</p>
+                                <p>Displacement - 780 cc</p>
+                                <p>Torque - 65 Foot Pounds</p>
+                                <div style="display: flex; align-items: center; margin-top: 30px;">
+                                    <p style="color: rgb(235, 190, 96);">Cost:
+                                    <h6
+                                        style="color: white; font-size: 14px; margin-left: 5px;">
+                                        $3400</h6>
+                                    </p>
+                                </div>
+                                <button class="Btn"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front" style="background: rgb(40, 37, 36)">
+                                <div>
+                                    <img class="lazyload" src="./assets/img/image 55.png" alt="Avatar"
+                                        style="width:180px;height:150px;">
+                                    <h3>Cummins M-series engine</h3>
+                                    <img src="./assets/img/Polygon 1.png"
+                                        style="width: 70px;height: 70px;position: relative; left: 105px; top: 43px;"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="back" style="background: rgb(40, 37, 36)">
+                                <h4>Cummins M-series engine</h4>
+                                <p style="margin-top: 30px; color: rgb(235, 190, 96);">Informations</p>
+                                <p>Top Speed - 146 mph/214 kpk</p>
+                                <p>Displacement - 1050 cc</p>
+                                <p>Torque - 84 Foot Pounds</p>
+                                <div style="display: flex; align-items: center; margin-top: 30px;">
+                                    <p style="color: rgb(235, 190, 96);">Cost: <span
+                                            style="color: white;">$3600</span></p>
+                                </div>
+                                <button class="Btn"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+<!-- footer -->
+<footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+        <div class="container-footer">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft; position: relative; left: 70px;">
+                        <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                        <p>Don’t miss any updates of our new templates and extensions.!</p>
+                        <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true"
+                            _lpchecked="1">
+                            <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                            <button class="btn btn_get btn_get_two" type="submit">Search</button>
+                            <p class="mchimp-errmessage" style="display: flex;"></p>
+                            <p class="mchimp-sucmessage" style="display: none;"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                        style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft; position: relative; left: 200px;">
+                        <h3 class="f-title f_600 t_color f_size_18">Info
+                        </h3>
+                        <ul class="list-unstyled f_list ">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="#">Review</a></li>
+                            <li><a href="#">More</a></li>
+                            <li><a href="register.html">Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+                        style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft; position: relative; left: 300px;">
+                        <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                        <div class="f_social_icon">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bg">
+            <div class="footer_bg_one"></div>
+            <div class="footer_bg_two"></div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="footer-containers">
+            <div class="row align-items-center" style="position: relative; left: 60px;">
+                <div class="col-lg-6 col-sm-5 text-right" style="position: relative; left: 830px;">
+                    <p>Made<i class="icon_heart"></i> in Group 10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./assets/js/engine.js"></script>
+</body>
+</html>

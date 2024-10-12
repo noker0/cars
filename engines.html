@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engines</title>
+</head>
+<link rel="stylesheet" href="assets/css/btn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/engines.css">
+<body>
+    <!--  navbar -->
+    <nav class="nav-container">
+        <div class="Logo">
+            <img src="./assets/img/logo.png" alt="" class="logo">
+            <p class="logo-text">Car's spare part</p>
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="shop.html"style="color: white;">SHOP</a></li>
+            <li><a href="">REVIEW</a></li>
+            <li><a href="register.html" class="end">REGISTER</a></li>
+            <div class="user">
+                <div class="user-circle"><i class="fa fa-user"></i></div>
+                <p>Guest</p>
+            </div>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+        </ul>
+        <div class="select" style="position: absolute;left: 1250px;bottom: -87px;">
+            <div class="selected" data-default="EN" data-one="RU" data-two="UZ">
+                <img src="assets/img/EN.png" alt="Flag" class="flag-icon" id="selected-flag">
+                <span id="selected-text">EN</span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="arrow">
+                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path>
+                </svg>
+            </div>
+            <div class="options">
+                <a href="index.html" style="color: white;text-decoration: none;">
+                <div title="EN">
+                    <input id="all" name="option" type="radio" checked />
+                    <img src="assets/img/EN.png" class="flag-icon" alt="USA Flag">
+                    <label class="option" for="all" data-txt="EN"></label>
+                </div>
+                </a>
+                <a href="index_ru.html" style="color: white;text-decoration: none;">
+                    <div title="RU" >
+                        <input id="option-1" name="option" type="radio" />
+                        <img src="/assets/img/RU.png" class="flag-icon" alt="Russia Flag">
+                        <label class="option" for="option-1" data-txt="RU"></label>
+                    </div>
+                </a>
+                <div title="UZ">
+                    <input id="option-2" name="option" type="radio" />
+                    <img src="/assets/img/UZ.png" class="flag-icon" alt="Uzbekistan Flag">
+                    <label class="option" for="option-2" data-txt="UZ"></label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- engines -->
+    
+    <div class="" style=" margin-top: 100px;">
+        <div class="" style="display: flex;justify-content: center;">
+            <p data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" style="color: rgb(235, 190, 96);left: 210px;top: 150px;max-width: 150px;font-size: 50px;"><a href="shop.html" style="text-decoration: none; color: rgb(235, 190, 96);">Catalogs</a></p>
+        </div>
+        <div class="" style="display: flex;justify-content: center;">
+            <div class=""
+                style="background-color: rgb(40, 37, 36);width: 210px;height: 10px;margin-left: 20px;margin-top: 10px;">
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" class="" style="display: flex;justify-content: center;">
+        <div class="search-bar"
+            style="background-color: rgb(235, 190, 96);width: 1100px;height: 66px;margin-top: 100px;border-radius: 50px;display: flex;align-items: center;"
+            class="">
+            <img src="./assets/img/Без_названия__4_-removebg-preview.png" style="display: none;width: 80px;height: 50px;"
+                class="none-block" alt="">
+            <div class="block-none"
+                style="display: flex;align-items: center;justify-content: center;gap: 40px;margin-left: 9%;">
+                <a style="color: white;font-size: 23px;text-decoration: none;" href="">Engines</a>
+                <a style="color: rgb(40, 37, 36);font-size: 23px;text-decoration: none;" href="">Exteriors</a>
+                <a style="color: rgb(40, 37, 36);font-size: 23px;text-decoration: none;" href="">Electric</a>
+                <a style="color: rgb(40, 37, 36);font-size: 23px;text-decoration: none;" href="">Brake</a>
+                <a style="color: rgb(40, 37, 36);font-size: 23px;text-decoration: none;" href="">Suspension</a>
+            </div>
+
+            <input
+                style="background: rgb(40, 37, 36); width: 380px;height: 42px;border-radius: 50px;margin-left: 5%;color: rgb(235, 190, 96);border: none;"
+                placeholder="Enter to Search" class="search" />
+            <button class="btn-2"
+                style="width: 113px;height: 40px;background: rgb(235, 190, 96);border: none;position: absolute;left: 1180px;border-radius: 50px;border: 2px solid rgb(40, 37, 36);color: rgb(40, 37, 36);font-size: 15px;display: flex;align-items: center;padding-left: 15px;gap: 10px;cursor: pointer; ">Search
+                <img src="./assets/img/Search_alt.png" alt="" style="z-index: 3;"></button>
+
+        </div>
+    </div>
+    <div class="circles"
+        style="background-color: rgb(235, 190, 96);border-radius: 50%;width: 299px;height: 299px;margin-top: 1000px; position: absolute; left: -220px;">
+    </div>
+    <div style="display: flex;justify-content: flex-end;position: relative;">
+        <div class="circles" style="width: 100px;
+    position: relative;
+    top: 100px;
+    height: 200px;
+    background-color: rgb(40, 37, 36);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; "></div>
+    </div>
+
+    <div class="" style="display: flex;justify-content: center;">
+        <div class="more-2"
+            style="background-color: rgb(40, 37, 36);width: 1100px;height: 1750px;gap: 100px;padding-top: 30px;"
+            class="">
+            <div class="" style="display: flex;justify-content: center;">
+                <p data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" style="color: rgb(235, 190, 96);left: 210px;top: 150px;font-size: 50px;">Engines</p>
+            </div>
+            <div class="gap" style="display: flex;justify-content: center;margin-top: 30px;gap: 70px;">
+                <a data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" href="engine.html" style="color: rgb(235, 190, 96); text-decoration: none;">
+                    <div class="noner"
+                    style="background-color: rgb(40, 37, 36);border: 2px solid rgb(235, 190, 96);width: 250px;height: 342px;">
+                    <div class="" style="display: flex; justify-content: center; margin-top: 40px;">
+                        <img src="./assets/img/image 50.png" style="width: 240px;height: 204px;" alt="">
+                    </div>
+                    <div class="" style="display: flex;align-items: center;">
+                        <div style="display: flex;margin-top: 40px;margin-left: 20px;align-items: center;" class="">
+                            <p style="color: rgb(235, 190, 96);font-size: 25px;display: flex;align-items: center;gap: 5px;">$3200</p>
+                        </div>
+                        <img src="./assets/img/Polygon 1.png"
+                            style="width: 50px;height: 50px;margin-top: 50px;margin-left: 120px;" alt="">
+                    </div>
+                </div>
+                </a>
+                <div class="noner"
+                    style="background-color: rgb(40, 37, 36);border: 2px solid rgb(235, 190, 96);width: 250px;height: 342px;">
+                    <p
+                        style="font-size: 20px;color: rgb(40, 37, 36);background: rgb(235, 190, 96);width: 78px;height: 28px;display: flex;align-items: center;justify-content: center;border-radius: 35px ;margin: 5px;">
+                        Sale</p>
+                    <div class="" style="display: flex;justify-content: center;margin-top: 40px;">
+                        <img src="./assets/img/image 51.png" style="width: 190px;height: 170px;" alt="">
+                    </div>
+                    <div class="" style="display: flex;align-items: center;">
+                        <div style="display: flex;margin-top: 40px;margin-left: 20px;align-items: center;" class="">
+                            <p
+                                style="color: rgb(235, 190, 96);font-size: 25px;display: flex;align-items: center;gap: 5px;">
+                                <span style="color: gray;font-size: 20px; text-decoration: line-through;">$3800</span>$2700</p>
+                        </div>
+                        <img src="./assets/img/Polygon 1.png"
+                            style="width: 50px;height: 50px;margin-top: 50px;margin-left: 65px;" alt="">
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" class="noner"
+                    style="background-color: rgb(40, 37, 36);border: 2px solid rgb(235, 190, 96);width: 250px;height: 342px;">
+                    <div class="" style="display: flex;justify-content: center;margin-top: 40px;">
+                        <img src="./assets/img/image 52.png" style="width: 240px; height: 184px;margin-top: 20px;" alt="">
+                    </div>
+                    <div class="" style="display: flex;align-items: center;">
+                        <div style="display: flex;margin-top: 40px;margin-left: 20px;align-items: center;" class="">
+                            <p
+                                style="color: rgb(235, 190, 96);font-size: 25px;display: flex;align-items: center;gap: 5px;">$3600</p>
+                        </div>
+                        <img src="./assets/img/Polygon 1.png"
+                            style="width: 50px;height: 50px;margin-top: 50px;margin-left: 120px;" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="gap" style="display: flex;justify-content: center;margin-top: 50px;gap: 70px;">
+                <div data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" class="noner"
+                    style="background-color: rgb(40, 37, 36);border: 2px solid rgb(235, 190, 96);width: 250px;height: 342px;">
+                    <p
+                        style="font-size: 20px;color: rgb(40, 37, 36);background: rgb(235, 190, 96);width: 78px;height: 28px;display: flex;align-items: center;justify-content: center;border-radius: 35px ;margin: 5px;">
+                        Sale</p>
+                    <div class="" style="display: flex;justify-content: center;margin-top: 40px;">
+                        <img src="./assets/img/image 53.png" style="width: 190px;height: 170px;" alt="">
+                    </div>
+                    <div class="" style="display: flex;align-items: center;">
+                        <div style="display: flex;margin-top: 40px;margin-left: 20px;align-items: center;" class="">
+                            <p
+                                style="color: rgb(235, 190, 96);font-size: 25px;display: flex;align-items: center;gap: 5px;">
+                                <span style="color: gray;font-size: 20px; text-decoration: line-through;">$3000</span>$2400</p>
+                        </div>
+                        <img src="./assets/img/Polygon 1.png"
+                            style="width: 50px;height: 50px;margin-top: 50px;margin-left: 65px;" alt="">
+                    </div>
+                </div>
+                <div class="noner"
+                    style="background-color: rgb(40, 37, 36);border: 2px solid rgb(235, 190, 96);width: 250px;height: 342px;">
+                    <div class="" style="display: flex;justify-content: center;margin-top: 40px;">
+                        <img src="./assets/img/image 54.png" style="width: 190px;height: 204px;" alt="">
+                    </div>
+                    <div class="" style="display: flex;align-items: center;">
+                        <div style="display: flex;margin-top: 40px;margin-left: 20px;align-items: center;" class="">
+                            <p
+                                style="color: rgb(235, 190, 96);font-size: 25px;display: flex;align-items: center;gap: 5px;">$2100</p>
+                        </div>
+                        <img src="./assets/img/Polygon 1.png"
+                            style="width: 50px;height: 50px;margin-top: 50px;margin-left: 120px;" alt="">
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" class="noner"
+                    style="background-color: rgb(40, 37, 36);border: 2px solid rgb(235, 190, 96);width: 250px;height: 342px;">
+                    <div class="" style="display: flex;justify-content: center;margin-top: 40px;">
+                        <img src="./assets/img/image 55.png" style="width: 240px;height: 204px;" alt="">
+                    </div>
+                    <div class="" style="display: flex;align-items: center;">
+                        <div style="display: flex;margin-top: 40px;margin-left: 20px;align-items: center;" class="">
+                            <p
+                                style="color: rgb(235, 190, 96);font-size: 25px;display: flex;align-items: center;gap: 5px;">$2300</p>
+                        </div>
+                        <img src="./assets/img/Polygon 1.png"
+                            style="width: 50px;height: 50px;margin-top: 50px;margin-left: 120px;" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="gap" style="display: flex;justify-content: center;margin-top: 50px;gap: 70px;">
+                <div data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" class="noner"
+                    style="background-color: rgb(40, 37, 36);border: 2px solid rgb(235, 190, 96);width: 250px;height: 342px;">
+                    <div class="" style="display: flex;justify-content: center;margin-top: 40px;">
+                        <img src="./assets/img/image 56.png" style="width: 190px;height: 204px;" alt="">
+                    </div>
+                    <div class="" style="display: flex;align-items: center;">
+                        <div style="display: flex;margin-top: 40px;margin-left: 20px;align-items: center;" class="">
+                            <p
+                                style="color: rgb(235, 190, 96);font-size: 25px;display: flex;align-items: center;gap: 5px;">$2250</p>
+                        </div>
+                        <img src="./assets/img/Polygon 1.png"
+                            style="width: 50px;height: 50px;margin-top: 50px;margin-left: 120px;" alt="">
+                    </div>
+                </div>
+                <div class="noner"
+                    style="background-color: rgb(40, 37, 36);border: 2px solid rgb(235, 190, 96);width: 250px;height: 342px;">
+                    <div class="" style="display: flex;justify-content: center;margin-top: 40px;">
+                        <img src="./assets/img/image 57.png" style="width: 190px;height: 204px;" alt="">
+                    </div>
+                    <div class="" style="display: flex;align-items: center;">
+                        <div style="display: flex;margin-top: 40px;margin-left: 20px;align-items: center;" class="">
+                            <p
+                                style="color: rgb(235, 190, 96);font-size: 25px;display: flex;align-items: center;gap: 5px;">$2800</p>
+                        </div>
+                        <img src="./assets/img/Polygon 1.png"
+                            style="width: 50px;height: 50px;margin-top: 50px;margin-left: 120px;" alt="">
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" class="noner"
+                    style="background-color: rgb(40, 37, 36);border: 2px solid rgb(235, 190, 96);width: 250px;height: 342px;">
+                    <p
+                        style="font-size: 20px;color: rgb(40, 37, 36);background: rgb(235, 190, 96);width: 78px;height: 28px;display: flex;align-items: center;justify-content: center;border-radius: 35px ;margin: 5px;">
+                        Sale</p>
+                    <div class="" style="display: flex;justify-content: center;margin-top: 40px;">
+                        <img src="./assets/img/image 58.png" style="width: 190px;height: 170px;" alt="">
+                    </div>
+                    <div class="" style="display: flex;align-items: center;">
+                        <div style="display: flex;margin-top: 40px;margin-left: 20px;align-items: center;" class="">
+                            <p
+                                style="color: rgb(235, 190, 96);font-size: 25px;display: flex;align-items: center;gap: 5px;">
+                                <span style="color: gray;font-size: 20px; text-decoration: line-through;">$3400</span>$2600</p>
+                        </div>
+                        <img src="./assets/img/Polygon 1.png"
+                            style="width: 50px;height: 50px;margin-top: 50px;margin-left: 65px;" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="gap" style="display: flex;justify-content: center;margin-top: 50px;gap: 70px;">
+                <div data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" class="noner"
+                    style="background-color: rgb(40, 37, 36);border: 2px solid rgb(235, 190, 96);width: 250px;height: 342px;">
+                    <div class="" style="display: flex;justify-content: center;margin-top: 40px;">
+                        <img src="./assets/img/image 59.png" style="width: 190px;height: 204px;" alt="">
+                    </div>
+                    <div class="" style="display: flex;align-items: center;">
+                        <div style="display: flex;margin-top: 40px;margin-left: 20px;align-items: center;" class="">
+                            <p
+                                style="color: rgb(235, 190, 96);font-size: 25px;display: flex;align-items: center;gap: 5px;">$2900</p>
+                        </div>
+                        <img src="./assets/img/Polygon 1.png"
+                            style="width: 50px;height: 50px;margin-top: 50px;margin-left: 120px;" alt="">
+                    </div>
+                </div>
+                <div class="noner"
+                    style="background-color: rgb(40, 37, 36);border: 2px solid rgb(235, 190, 96);width: 250px;height: 342px;">
+                    <p
+                        style="font-size: 20px;color: rgb(40, 37, 36);background: rgb(235, 190, 96);width: 78px;height: 28px;display: flex;align-items: center;justify-content: center;border-radius: 35px ;margin: 5px;">
+                        Sale</p>
+                    <div class="" style="display: flex;justify-content: center;margin-top: 40px;">
+                        <img src="./assets/img/image 60.png" style="width: 200px;height: 170px;" alt="">
+                    </div>
+                    <div class="" style="display: flex;align-items: center;">
+                        <div style="display: flex;margin-top: 40px;margin-left: 20px;align-items: center;" class="">
+                            <p
+                                style="color: rgb(235, 190, 96);font-size: 25px;display: flex;align-items: center;gap: 5px;">
+                                <span style="color: gray;font-size: 20px; text-decoration: line-through;">$3600</span>$2945</p>
+                        </div>
+                        <img src="./assets/img/Polygon 1.png"
+                            style="width: 50px;height: 50px;margin-top: 50px; margin-left: 65px;" alt="">
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" class="noner"
+                    style="background-color: rgb(40, 37, 36);border: 2px solid rgb(235, 190, 96);width: 250px;height: 342px;">
+                    <div class="" style="display: flex;justify-content: center;margin-top: 40px;">
+                        <img src="./assets/img/image 61.png" style="width: 190px; height: 204px;" alt="">
+                    </div>
+                    <div class="" style="display: flex;align-items: center;">
+                        <div style="display: flex;margin-top: 40px;margin-left: 20px;align-items: center;" class="">
+                            <p
+                                style="color: rgb(235, 190, 96);font-size: 25px;display: flex;align-items: center;gap: 5px;">$1890</p>
+                        </div>
+                        <img src="./assets/img/Polygon 1.png"
+                            style="width: 50px;height: 50px;margin-top: 50px; margin-left: 120px;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex;justify-content: flex-end;position: relative;">
+        <div class="circles" style="width: 100px;
+    position: relative;
+    bottom: 20px;
+    height: 200px;
+    background-color: rgb(40, 37, 36);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; "></div>
+    </div>
+
+    <!-- footer -->
+    <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container-footer">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft; position: relative; left: 70px;">
+                            <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                            <p>Don’t miss any updates of our new templates and extensions.!</p>
+                            <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true"
+                                _lpchecked="1">
+                                <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                <button class="btn btn_get btn_get_two" type="submit">Search</button>
+                                <p class="mchimp-errmessage" style="display: flex;"></p>
+                                <p class="mchimp-sucmessage" style="display: none;"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft; position: relative; left: 200px;">
+                            <h3 class="f-title f_600 t_color f_size_18">Info
+                            </h3>
+                            <ul class="list-unstyled f_list ">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">More</a></li>
+                                <li><a href="register.html">Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+                            style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft; position: relative; left: 300px;">
+                            <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                            <div class="f_social_icon">
+                                <a href="#" class="fab fa-facebook"></a>
+                                <a href="#" class="fab fa-twitter"></a>
+                                <a href="#" class="fab fa-linkedin"></a>
+                                <a href="#" class="fab fa-pinterest"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer-containers">
+                <div class="row align-items-center" style="position: relative; left: 60px;">
+                    <div class="col-lg-6 col-sm-5 text-right" style="position: relative; left: 830px;">
+                        <p>Made<i class="icon_heart"></i> in Group 10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/btn.js"></script>
+    <script src="./assets/js/engines.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:1,
+      });
+    </script>
+</body>
+</html>

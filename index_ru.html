@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car's spare part</title>
+</head>
+<link rel="stylesheet" href="assets/css/btn.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="./assets/css/style.css">
+
+<body>
+
+    <!--  navbar -->
+    <nav class="nav-container">
+        <div class="Logo">
+            <img src="./assets/img/logo.png" alt="" class="logo">
+            <p class="logo-text">Car's spare part</p>
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="index.html" style="color: white;">ДОМ</a></li>
+            <li><a href="services.html">УСЛУГИ</a></li>
+            <li><a href="shop.html">МАГАЗИН</a></li>
+            <li><a href="">ОБЗОР</a></li>
+            <li><a href="register.html" class="end">РЕГИСТРАЦИЯ</a></li>
+            <div class="user">
+                <div class="user-circle"><i class="fa fa-user"></i></div>
+                <p>Гость</p>
+            </div>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+        </ul>
+        <div class="select" style="position: absolute;left: 1250px;bottom: -87px;">
+            <div class="selected" data-default="EN" data-one="RU" data-two="UZ">
+                <img src="assets/img/RU.png" alt="Flag" class="flag-icon" id="selected-flag">
+                <span id="selected-text">RU</span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="arrow">
+                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path>
+                </svg>
+            </div>
+            <div class="options">
+                <a href="index.html" style="color: white;text-decoration: none;">
+                <div title="EN">
+                    <input id="all" name="option" type="radio" checked />
+                    <img src="assets/img/EN.png" class="flag-icon" alt="USA Flag">
+                    <label class="option" for="all" data-txt="EN"></label>
+                </div>
+                </a>
+                <a href="./ru/index_ru.html" style="color: white;text-decoration: none;">
+                    <div title="RU" >
+                        <input id="option-1" name="option" type="radio" />
+                        <img src="/assets/img/RU.png" class="flag-icon" alt="Russia Flag">
+                        <label class="option" for="option-1" data-txt="RU"></label>
+                    </div>
+                </a>
+                <div title="UZ">
+                    <input id="option-2" name="option" type="radio" />
+                    <img src="/assets/img/UZ.png" class="flag-icon" alt="Uzbekistan Flag">
+                    <label class="option" for="option-2" data-txt="UZ"></label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <div class="home-main">
+        <div class="home-main-rectangle slide-left">
+            <div class="home-main-text slide-left">
+                <h1>Лучший автосервис в городе</h1>
+                <div class="home-main-line"></div>
+                <div class="slide-up">
+                    <p class="slide-up-p">Мы можем помочь для</p>
+                    <section class="animation">
+                        <div class="first">
+                            <div>Чинить машины</div>
+                        </div>
+                        <div class="second">
+                            <div>Мойка автомобиля</div>
+                        </div>
+                        <div class="third">
+                            <div>Запчасти</div>
+                        </div>
+                    </section>
+                </div>
+                <p>Надежность и качество в каждом ремонте</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- about us -->
+    <div  class="circle-dark-left"></div>
+    <div class="about">
+        <img data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" src="./assets/img/home-main.png" alt="" class="about-img">
+        <div data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000">
+            <h1>О нас</h1>
+            <div class="home-about-line"></div>
+            <p >Добро пожаловать в наш автосервис! Имея более чем 10-летний опыт работы, мы предлагаем комплексное обслуживание автомобилей, ремонт и диагностика. Наша команда профессионалов всегда готова помочь Вам с любым автомобильным вопросом. проблемы.</p>
+        </div>
+    </div>
+    <div style="display: flex;justify-content: flex-end; position: relative; top: 50px;">
+        <div style="width: 75px;
+        height: 150px;
+        background-color: #ECCB72;
+        border-top-left-radius: 75px;
+        border-bottom-left-radius: 75px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0; "></div>
+    </div>
+
+    <!-- offer -->
+    <img src="./assets/img/matiz.png" alt="" class="matiz-img">
+    <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" class="offer">
+        <div  class="offer-text">
+            <h1>Предложение месяца</h1>
+            <div class="home-offer-line"></div>
+            <p>Скидки на замену масла и фильтров в этом месяце!</p>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div class="services">
+        <h1 data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" class="to-center">Услуги</h1>
+        <div class="home-about-line to-center"></div>
+        <div class="circle-light-left"></div>
+        <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" class="services-cards">
+            <div class="services-card">
+                <img src="./assets/img/services-card1.png" alt="" class="service-img">
+                <h1>Чинить машины</h1>
+                <p>К сожалению, большинство компонентов этих систем не служат вечно. делая периодический ремонт автомобилей неизбежной частью владения автомобилем.</p>
+            </div>
+            <div class="services-card">
+                <img src="./assets/img/services-card2.jpg" alt="" class="service-img">
+                <h1>Мойка автомобилей</h1>
+                <p>Ожидайте всплеска новейших цифровых инструментов, таких как онлайн-планирование встреч. и карты местоположения GPS, пропитанные стратегиями SEO, которые обязательно повысят вашу видимость.</p>
+            </div>
+            <div class="services-card">
+                <img src="./assets/img/services-card3.jpg" alt="" class="service-img">
+                <h1>Запчасти</h1>
+                <p>Важно учитывать ключевые критерии выбора, такие как совместимость, качество, доступность, стоимость и гарантия при покупке запчастей.</p>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex;justify-content: flex-end;">
+        <div class="circle-dark-right" style="width: 70px;
+        height: 140px;
+        background-color: #282425;
+        border-top-left-radius: 70px;
+        border-bottom-left-radius: 70px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0; "></div>
+    </div>
+
+    <!-- reviews -->
+    <h1 data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" class="to-center">Отзывы</h1>
+    <div class="home-about-line to-center"></div>
+    <div class="container">
+        <div class="slide-container active">
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                    <img src="./assets/img/user_1.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Уильям Джексон</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic odit commodi rerum cum, optio deserunt sit porro repellendus mollitia magni ducimus exercitationem numquam fugit fuga accusamus quam eveniet veritatis quibusdam.</p>
+            </div>
+        </div>
+        <div class="slide-container">
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                    <img src="./assets/img/user_2.webp" alt="">
+                    <div class="user-info">
+                        <h3>Карла Хьюстон</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium iusto illum fugiat autem, dolor suscipit ratione similique, beatae itaque ullam quibusdam cum laboriosam error voluptatibus, magni obcaecati neque alias delectus!</p>
+            </div>
+        </div>
+        <div class="slide-container">
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                    <img src="./assets/img/user_3.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Клэри Дивас</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit consequuntur ducimus laborum vero quidem ut explicabo culpa at quod deserunt ullam praesentium, eum quaerat cupiditate qui voluptas, amet assumenda libero.</p>
+            </div>
+        </div>
+        <div class="slide-container">
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                    <img src="./assets/img/user_4.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Генри Томас</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="slide-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi aliquid deleniti excepturi saepe rem accusamus sapiente molestias! Cupiditate libero hic error tenetur soluta ipsa ea suscipit, natus, odit quos atque?</p>
+            </div>
+        </div>
+        <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+        <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+    </div>
+    
+    <!-- contact -->
+    <form class="form">
+        <h1 data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" class="to-center">Контакт</h1>
+        <div class="home-about-line to-center"></div>
+        <div class="tits">
+            <input data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" type="text" placeholder="Your Name" class="put">
+            <input data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" type="text" placeholder="Your Phone" class="input">
+        </div>
+        <input data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" type="text" placeholder="Your Email" class="in">
+        <input data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" placeholder="Your message" class="input-text"></input>
+        <button class="button to-center">Подключите нас</button>
+    </form>
+
+    <!-- footer -->
+    <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container-footer">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft; position: relative; left: 70px;">
+                            <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                            <p>Don’t miss any updates of our new templates and extensions.!</p>
+                            <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true"
+                                _lpchecked="1">
+                                <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                <button class="btn btn_get btn_get_two" type="submit">Search</button>
+                                <p class="mchimp-errmessage" style="display: flex;"></p>
+                                <p class="mchimp-sucmessage" style="display: none;"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft; position: relative; left: 200px;">
+                            <h3 class="f-title f_600 t_color f_size_18">Info
+                            </h3>
+                            <ul class="list-unstyled f_list ">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">More</a></li>
+                                <li><a href="register.html">Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+                            style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft; position: relative; left: 300px;">
+                            <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                            <div class="f_social_icon">
+                                <a href="#" class="fab fa-facebook"></a>
+                                <a href="#" class="fab fa-twitter"></a>
+                                <a href="#" class="fab fa-linkedin"></a>
+                                <a href="#" class="fab fa-pinterest"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer-containers">
+                <div class="row align-items-center" style="position: relative; left: 60px;">
+                    <div class="col-lg-6 col-sm-5 text-right" style="position: relative; left: 830px;">
+                        <p>Made<i class="icon_heart"></i> in Group 10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/btn.js"></script>
+    <script>
+        let slides = document.querySelectorAll('.slide-container');
+        let index = 0;
+
+        function next(){
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active')
+        }
+        function prev(){
+            slides[index].classList.remove('active');
+            index = (index - 1 + slides.length) % slides.length;
+            slides[index].classList.add('active')
+        }
+    </script>
+<script src="./assets/js/index.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:1,
+  });
+</script>
+</body>
+</html>

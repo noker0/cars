@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/btn.css">
+<body>
+<!--  navbar -->
+<nav class="nav-container">
+    <div class="Logo">
+        <img src="./assets/img/logo.png" alt="" class="logo">
+        <p class="logo-text">Car's spare part</p>
+    </div>
+    <div class="openMenu"><i class="fa fa-bars"></i></div>
+    <ul class="mainMenu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="">REVIEW</a></li>
+        <li><a href="register.html" class="end">REGISTER</a></li>
+        <div class="user">
+            <div class="user-circle"><i class="fa fa-user"></i></div>
+            <p>Guest</p>
+        </div>
+        <div class="closeMenu"><i class="fa fa-times"></i></div>
+    </ul>
+    <div class="select" style="position: absolute;left: 1250px;bottom: -87px;">
+        <div class="selected" data-default="EN" data-one="RU" data-two="UZ">
+            <img src="assets/img/EN.png" alt="Flag" class="flag-icon" id="selected-flag">
+            <span id="selected-text">EN</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="arrow">
+                <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path>
+            </svg>
+        </div>
+        <div class="options">
+            <a href="index.html" style="color: white;text-decoration: none;">
+            <div title="EN">
+                <input id="all" name="option" type="radio" checked />
+                <img src="assets/img/EN.png" class="flag-icon" alt="USA Flag">
+                <label class="option" for="all" data-txt="EN"></label>
+            </div>
+            </a>
+            <a href="index_ru.html" style="color: white;text-decoration: none;">
+                <div title="RU" >
+                    <input id="option-1" name="option" type="radio" />
+                    <img src="/assets/img/RU.png" class="flag-icon" alt="Russia Flag">
+                    <label class="option" for="option-1" data-txt="RU"></label>
+                </div>
+            </a>
+            <div title="UZ">
+                <input id="option-2" name="option" type="radio" />
+                <img src="/assets/img/UZ.png" class="flag-icon" alt="Uzbekistan Flag">
+                <label class="option" for="option-2" data-txt="UZ"></label>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <div class="login">
+        <form class="form">
+            <p class="title">Welcome to Back!</p>
+            <p class="message">Sign in now and get full access to our services. </p>
+
+
+            <label>
+                <input class="input" type="email" placeholder="" required="">
+                <span>Email</span>
+            </label>
+
+            <label>
+                <input class="input" type="password" placeholder="" required="">
+                <span>Password</span>
+            </label>
+            <p class="socc">Or go with</p>
+            <div class="imagesss">
+                <img src="./assets/img/instagram.png" alt="">
+                <img src="./assets/img/apple-logo.png" alt="">
+                <img src="./assets/img/facebook.png" alt="">
+                <img src="./assets/img/search.png" alt="">
+            </div>
+            <button class="submit">Submit</button>
+            <p class="signin">Already have an acount ? <a href="register.html">Sign up</a> </p>
+
+        </form>
+    </div>
+    
+</body>
+</html>
